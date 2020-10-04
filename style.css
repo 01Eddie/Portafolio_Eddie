@@ -1,0 +1,399 @@
+html {
+    scroll-behavior: smooth;
+  }  
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; /* Esto sirve para deshabilitar la barra navegadora de los costados, en este caso en el eje x */
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: repeat(5, 100vh) 10vh;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-areas: 
+        "area1 area7"
+        "area2 area3"
+        "area8 area9"
+        "area4 area5"
+        "area6 area10"
+        "area11 area11";        
+}
+.grid1{
+    background-color: #000000;
+    grid-area: area1;
+    color: #ffffff;
+}
+.grid1_arriba{
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid1_abajo{
+    height: 65vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.btn_header{
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+}
+.grid2{
+    background-color: cadetblue;
+    grid-area: area2;
+    padding: 20px;
+
+}
+.grid2_about{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.img_about{
+    width: 50%;
+    height: 50%;
+    border-radius: 100rem;
+    object-fit: cover; /* Esto evita que se estire la imagen */
+}
+.grid3{
+    background-color: azure;
+    grid-area: area3;
+    padding: 20px;
+}
+.grid3_work{
+    height: 20vh;
+    margin: 0px;/* 
+    align-items: center; */
+}
+/* Aqui se agregara las fotos de mis anteriores chambas xd */
+.grid3_work_photos{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  
+    grid-gap: 10px;
+    align-self: start;
+}
+.work_photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+.work_photos:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04); 
+}
+.grid4{
+    background-color: rgb(78, 78, 190);
+    grid-area: area4;
+    padding: 20px;
+}
+.grid4_resume{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.grid5{
+    background-color: burlywood;
+    grid-area: area5;
+    padding: 20px;
+}
+.grid5_ubicame_arriba{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.grid5_ubicame_abajo{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.grid6{
+    background-color: cyan;
+    grid-area: area6;
+    padding: 20px;
+}
+.grid6_contact{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.grid7{
+    background-color: aquamarine;
+    grid-area: area7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.detail_title{
+    height: 10vh;
+}
+.profile_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.foto2{
+    height: 100%;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+.date_profile{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+.grid8{
+    background-color: yellow;
+    grid-area: area8;
+    padding: 20px;
+}
+.grid9{
+    background-color: violet;
+    grid-area: area9;
+    padding: 20px;
+}
+
+.row{
+    padding: 20px;
+    background-color: ivory;
+}
+footer{
+    grid-area: area11;
+    background-color: beige;
+    /* height: 10vh; */
+    margin: 0px;
+    padding: 20px;
+    text-align: center;/* 
+    align-items: center;
+    justify-content: center; */
+}
+.grid10{
+    background-color: slateblue;
+    grid-area: area10;
+    padding: 20px;
+}
+.testimonials_title{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials_person{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@media screen and (max-width: 600px){
+    .contenedor{
+        display: grid;
+        grid-template-rows: repeat(10, 100vh) 10vh;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-areas:
+            "area1" 
+            "area7"
+            "area2"
+            "area3" 
+            "area4"
+            "area5" 
+            "area6"
+            "area8"
+            "area9"
+            "area10"
+            "area11";
+        
+    }
+}
+/* Aqui configurareos los titulos */
+.title{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.cv {
+    color: red !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: red;
+    transition: all 1s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cv:hover {
+    background: red;
+    color: #ffffff !important;
+  }
+
+  
+/* Skills languajes */
+.speak_title{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.speak_languajes{
+    height: 80vh;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.lang{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  ::-webkit-scrollbar-thumb:active{
+      background: yellow;
+  }
+
+
+
+.skill_title{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill_professional{
+    height: 80vh;
+}
+
+
+/* progress bar de skills */
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+.skill_logo{
+    width: 40px;
+    height: 40px;
+}
+#Skill-HTML {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+#Skill-CSS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+#Skill-jQuery { /*Python -Django*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #99856d;
+}
+#Skill-JS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+
+#Skill-JAVA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #8e930c;
+}
+#Skill-PHP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #5A69A6;
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+}
