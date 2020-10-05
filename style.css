@@ -75,7 +75,8 @@ body{
 .grid3{
     background-color: azure;
     grid-area: area3;
-    padding: 20px;
+    padding: 20px;/* 
+    height: auto; */
 }
 .grid3_work{
     height: 20vh;
@@ -120,18 +121,29 @@ body{
     padding: 20px;
 }
 .grid5_ubicame_arriba{
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .grid5_ubicame_abajo{
-    height: 85vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center ;
     flex-direction: column;
+}
+.map{
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+}
+.date_localization{
+    height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .grid6{
     background-color: cyan;
@@ -196,7 +208,6 @@ footer{
     margin: 0px;
     padding: 20px;
     display: flex;
-    /* text-align: center; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -219,10 +230,43 @@ footer{
     align-items: center;
     
 }
+@media screen and (max-width: 1020px){
+    .contenedor{
+        display: grid;
+        grid-template-rows: 100vh 150vh repeat(4, 100vh) 10vh;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-areas: 
+            "area1 area7"
+            "area2 area3"
+            "area8 area3"
+            "area9 area4"
+            "area5 area10"
+            "area6 area6"
+            "area11 area11";        
+    }
+}
+@media screen and (max-width: 700px){
+    .contenedor{
+        display: grid;
+        grid-template-rows: 100vh 100vh repeat(4, 100vh) 10vh;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-areas: 
+            "area1 area7"
+            "area2 area3"
+            "area8 area3"
+            "area9 area3"
+            "area4 area5"
+            "area10 area6"
+            "area11 area11";    
+    }
+    .testimonials_title p{
+        font-size: 25px;
+    }
+}
 @media screen and (max-width: 600px){
     .contenedor{
         display: grid;
-        grid-template-rows: repeat(10, 100vh) 10vh;
+        grid-template-rows: repeat(3, 100vh) 150vh repeat(6, 100vh) 10vh;
         grid-template-columns: repeat(1, 100vw);
         grid-template-areas:
             "area1" 
@@ -238,6 +282,11 @@ footer{
             "area11";
         
     }
+}
+@media screen and (max-width: 400px){
+    .testimonials_title p{
+        font-size: 20px;
+    } 
 }
 /* Aqui configurareos los titulos */
 .title{
