@@ -15,14 +15,27 @@
     <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fira+Sans+Extra+Condensed:wght@100&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  
   <div class="contenedor">
     <div class="grid1" id="index">
-        <div class="grid1_arriba"><a href="#"><img src="img/logo.png" alt="Eddie HG"></a></div>
+      <div class="dark_mode">
+        <button class="dark">
+          <div class="night-mode-button">
+            <input type="checkbox" class="checkbox" id="night-mode"  onclick="myFunction()">
+            <label for="night-mode" class="label">
+              <i class="fal fa-paint-brush"></i>
+              <i class="fal fa-image"></i>
+              <div class="blob"></div>
+            </label>
+          </div>
+        </button>
+      </div>
+        <div class="grid1_arriba">
+          <a href="#"><img class="logo" src="img/logo.png" alt="Eddie HG"></a></div>
         <div class="grid1_abajo">
             <!-- <a href="#details" class="btn_header hover:bg-blue-500">Inicio</a> -->
             <a href="#details" class="btn_header hover:bg-orange-500">Detalles Personales</a>
@@ -42,187 +55,187 @@
         <div class="grid2_about">
             <h2 class="title">Acerca de mi</h2>
         <img class="img_about" src="img/perfil.jpg" alt="Eddie Jesus Huaripayta Gonzales">
-        <p>Me considero una persona responsable, dinamica y creativa, con facilidad de adaptaciòn y capacidad de trabajar en equipo, en condiciones de alta presión, con iniciativa para resolver problemas de manera eficiente y lograr las metas y objetivos trazados. Tengo tres años de experiencia en la rama de la informática, donde tengo la experiencia en temas de gestión y reportes y temas de programación web.</p>
+        <p  class="subtitulo">Me considero una persona responsable, dinamica y creativa, con facilidad de adaptaciòn y capacidad de trabajar en equipo, en condiciones de alta presión, con iniciativa para resolver problemas de manera eficiente y lograr las metas y objetivos trazados. Tengo tres años de experiencia en la rama de la informática, donde tengo la experiencia en temas de gestión y reportes y temas de programación web.</p>
         </div>
     </div>
-  <div class="grid3" id="work_photos">
-    <div class="grid3_work">
-        <p class="title">Mis trabajos y estudios realizados</p>
-        <p class="subtitulo">Mis trabajos y estudios anteriores</p>
+    <div class="grid3" id="work_photos">
+      <div class="grid3_work">
+          <p class="title">Mis trabajos y estudios realizados</p><br>
+          <p class="subtitulo">Mis trabajos y estudios anteriores</p>
+      </div>
+      <div class="grid3_work_photos">
+        <a class="example-image-link" href="img/conferencia.jpg" data-lightbox="example-set" data-title="Esta conferencia fue hecha por Karina Canales trabajadora de Google, esto fue en la UTEC Lima">
+        <div class="work_photos"><img class="work_photos" src="img/conferencia.jpg" alt="Conferencia UTEC-Karina Canales"></div></a>
+
+        <a class="example-image-link" href="img/hackspace.png" data-lightbox="example-set" data-title="Es una comunidad de programadores (programacion, data science, y seguridad informatica), donde actualmente soy facilitador del programa.">
+          <div class="work_photos"><img class="work_photos" src="img/hackspace.png" alt="Logo _HackSpace"></div></a>
+          
+          <a class="example-image-link" href="img/hackspace1.jpg" data-lightbox="example-set" data-title="Esta es una foto hecha en Jesus Maria, donde es la sede central de Hackspace.">
+          <div class="work_photos"><img class="work_photos" src="img/hackspace1.jpg" alt="HackSpace Jesus María"></div></a>
+          
+          <a class="example-image-link" href="img/indeci.png" data-lightbox="example-set" data-title="Esto es el Instituto Nacional de Defensa Civil, donde fue la primera vez participe de un voluntariado, esa vez fue para recibir la llegada del Papa Francisco al Perú.">
+          <div class="work_photos"><img class="work_photos" src="img/indeci.png" alt="Indeci"></div></a>
+          
+          <a class="example-image-link" href="img/Insignia_Colegio.png" data-lightbox="example-set" data-title="Esta insignia, fue mi colegio de Secundaria ubicado en San Martin de Porres, Lima, Perú.">
+          <div class="work_photos"><img class="work_photos" src="img/Insignia_Colegio.png" alt="IE PNP Santa Rosa de Lima 2001"></div></a>
+          
+          <a class="example-image-link" href="img/miniter.png" data-lightbox="example-set" data-title="Este es el Ministerio del Interior(MININTER), donde labore en el area de COEN_MININTER, en la oficina de Defensa y Seguridad Nacional.">
+          <div class="work_photos"><img class="work_photos" src="img/miniter.png" alt="Ministerio del Interior"></div></a>
+          
+          <a class="example-image-link" href="img/uni.png" data-lightbox="example-set" data-title="En esta Universidad lleve cursos libres de PHP.">
+          <div class="work_photos"><img class="work_photos" src="img/uni.png" alt="UNI"></div></a>
+          
+          <a class="example-image-link" href="img/utp.png" data-lightbox="example-set" data-title="Esta es la Universidad donde estudio Ingeniería de Sistemas e Informática.">
+          <div class="work_photos"><img class="work_photos" src="img/utp.png" alt="UTP"></div></a>
+          
+          <a class="example-image-link" href="img/tech101.png" data-lightbox="example-set" data-title="Esta es una comunidad mexicana, donde lleve una asesoria de web, especializados en Frontend.">
+          <div class="work_photos"><img class="work_photos" src="img/tech101.png" alt="Tech 101"></div></a>
+
+      </div>
     </div>
-    <div class="grid3_work_photos">
-      <a class="example-image-link" href="img/conferencia.jpg" data-lightbox="example-set" data-title="Esta conferencia fue hecha por Karina Canales trabajadora de Google, esto fue en la UTEC Lima">
-      <div class="work_photos"><img class="work_photos" src="img/conferencia.jpg" alt="Conferencia UTEC-Karina Canales"></div></a>
-
-      <a class="example-image-link" href="img/hackspace.png" data-lightbox="example-set" data-title="Es una comunidad de programadores (programacion, data science, y seguridad informatica), donde actualmente soy facilitador del programa.">
-        <div class="work_photos"><img class="work_photos" src="img/hackspace.png" alt="Logo _HackSpace"></div></a>
-        
-        <a class="example-image-link" href="img/hackspace1.jpg" data-lightbox="example-set" data-title="Esta es una foto hecha en Jesus Maria, donde es la sede central de Hackspace.">
-        <div class="work_photos"><img class="work_photos" src="img/hackspace1.jpg" alt="HackSpace Jesus María"></div></a>
-        
-        <a class="example-image-link" href="img/indeci.png" data-lightbox="example-set" data-title="Esto es el Instituto Nacional de Defensa Civil, donde fue la primera vez participe de un voluntariado, esa vez fue para recibir la llegada del Papa Francisco al Perú.">
-        <div class="work_photos"><img class="work_photos" src="img/indeci.png" alt="Indeci"></div></a>
-        
-        <a class="example-image-link" href="img/Insignia_Colegio.png" data-lightbox="example-set" data-title="Esta insignia, fue mi colegio de Secundaria ubicado en San Martin de Porres, Lima, Perú.">
-        <div class="work_photos"><img class="work_photos" src="img/Insignia_Colegio.png" alt="IE PNP Santa Rosa de Lima 2001"></div></a>
-        
-        <a class="example-image-link" href="img/miniter.png" data-lightbox="example-set" data-title="Este es el Ministerio del Interior(MININTER), donde labore en el area de COEN_MININTER, en la oficina de Defensa y Seguridad Nacional.">
-        <div class="work_photos"><img class="work_photos" src="img/miniter.png" alt="Ministerio del Interior"></div></a>
-        
-        <a class="example-image-link" href="img/uni.png" data-lightbox="example-set" data-title="En esta Universidad lleve cursos libres de PHP.">
-        <div class="work_photos"><img class="work_photos" src="img/uni.png" alt="UNI"></div></a>
-        
-        <a class="example-image-link" href="img/utp.png" data-lightbox="example-set" data-title="Esta es la Universidad donde estudio Ingeniería de Sistemas e Informática.">
-        <div class="work_photos"><img class="work_photos" src="img/utp.png" alt="UTP"></div></a>
-        
-        <a class="example-image-link" href="img/tech101.png" data-lightbox="example-set" data-title="Esta es una comunidad mexicana, donde lleve una asesoria de web, especializados en Frontend.">
-        <div class="work_photos"><img class="work_photos" src="img/tech101.png" alt="Tech 101"></div></a>
-
+    <div class="grid4" id="resume">
+      <div class="grid4_resume">
+          <div class="">
+            <p class="title">Experiencia laboral</p><br>
+          <p class="subtitulo">Detalle por fecha de mis trabajos</p>
+          </div>
+          <!-- aqui ira una tabla de trabajo sobre los puestos fecha,etc -->
+          <table class="responsive-table">
+              <thead>
+                  <tr>
+                      <th>Tiempo de labor</th>
+                      <th>Nombre de la empresa</th>
+                      <th>¿Que hacía?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2017</td>
+                    <td>INDECI</td>
+                    <td>INDECI</td>
+                  </tr>
+                  <tr>
+                    <td>2018</td>
+                    <td>MININTER</td>
+                    <td>MININTER</td>
+                  </tr>
+                  <tr>
+                    <td>2019</td>
+                    <td>HackSpace</td>
+                    <td>Desarrollo web</td>
+                  </tr>
+                </tbody>
+            </table>
+      </div>
     </div>
-  </div>
-  <div class="grid4" id="resume">
-    <div class="grid4_resume">
-        <div class="">
-          <p class="title">Experiencia laboral</p><br>
-        <p class="subtitulo">Detalle por fecha de mis trabajos</p>
-        </div>
-        <!-- aqui ira una tabla de trabajo sobre los puestos fecha,etc -->
-        <table class="responsive-table">
-            <thead>
-                <tr>
-                    <th>Tiempo de labor</th>
-                    <th>Nombre de la empresa</th>
-                    <th>¿Que hacía?</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2017</td>
-                  <td>INDECI</td>
-                  <td>INDECI</td>
-                </tr>
-                <tr>
-                  <td>2018</td>
-                  <td>MININTER</td>
-                  <td>MININTER</td>
-                </tr>
-                <tr>
-                  <td>2019</td>
-                  <td>HackSpace</td>
-                  <td>Desarrollo web</td>
-                </tr>
-              </tbody>
-          </table>
+    <div class="grid5" id="localization">
+          <div class="grid5_ubicame_arriba"><p class="title">Ubicame en:</p></div>
+          <div class="grid5_ubicame_abajo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15615.14542900591!2d-77.08776103669827!3d-11.91995117752619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1900a52640f%3A0x52eea403265e0a9b!2sCalle%2024%2C%20Puente%20Piedra%2015116!5e0!3m2!1ses-419!2spe!4v1601793998311!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0; margin: 15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <strong><p>Estoy disponible las 24 horas</p> <p> Lima, Perú </p> <p>+51 970383996 </p> <p>eddiejesus1197@gmail.com</p></strong>
+          </div>
     </div>
-  </div>
-  <div class="grid5" id="localization">
-        <div class="grid5_ubicame_arriba"><p class="title">Ubicame en:</p></div>
-        <div class="grid5_ubicame_abajo">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15615.14542900591!2d-77.08776103669827!3d-11.91995117752619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1900a52640f%3A0x52eea403265e0a9b!2sCalle%2024%2C%20Puente%20Piedra%2015116!5e0!3m2!1ses-419!2spe!4v1601793998311!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0; margin: 15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <strong><p>Estoy disponible las 24 horas</p> <p> Lima, Perú </p> <p>+51 970383996 </p> <p>eddiejesus1197@gmail.com</p></strong>
-        </div>
-  </div>
-  <div class="grid6" id="contact">
-        <div class="grid6_contact">
-            <div class="">
-              <p class="title">Contacto</p><br>
-            <p class="subtitulo">Pongase en contacto conmigo</p>
-            </div>
-
-            <div class="row">
-                <form class="col s12">                   
-                    <div class="input-field col s12">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Nombre</label>
-                      </div>
-
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                      <span class="helper-text" data-error="No aceptado" data-success="Aceptado">Escribe el email</span>
-                    </div>
-                    
-                    <div class="input-field col s12">
-                      <textarea id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Textarea</label>
-                  </div>
-                  <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar <i class="fad fa-paper-plane"></i></button>
-                </form>
+    <div class="grid6" id="contact">
+          <div class="grid6_contact">
+              <div class="">
+                <p class="title">Contacto</p><br>
+              <p class="subtitulo">Pongase en contacto conmigo</p>
               </div>
-        </div>
-  </div>
 
-  <div class="grid7" id="details">
-    <div class="detail_title">
-      <p class="title">Detalles personales</p></div>
-    <div class="profile_image"><img class="foto2" src="img/profile.png" alt="Eddie Jesus Huaripayta Gonzales"></div>
-    <div class="date_profile"><div class=""><p><strong>Nombres:</strong> Eddie Jesus</p>
-      <p><strong>Apellidos:</strong> Huaripayta Gonzales</p>
-      <p><strong>Dirección:</strong> Lima Perú</p>
-      <p><strong>Telefono:</strong> +51 970 383 996</p>
-      <p><strong>Email:</strong> eddiejesus1197@gmail.com</p></div></div>
+              <div class="row">
+                  <form class="col s12">                   
+                      <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate">
+                          <label for="last_name">Nombre</label>
+                        </div>
 
-    <button class="cv">Descargar mi CV</button>
-
-
-  </div>
-
-  <div class="grid8" id="skills">
-  
-  <div class="skill_title"><p class="title">Habilidades Técnicas</p></div>
-      <div class="skill_professional">
-        <div class="SkillBar">
-          <div id="Skill-HTML">
-            <span class="Skill-Area ">HTML</span>
-             <img class="skill_logo" src="img/html5.png" alt="">
-            <span class="PercentText ">100%</span>
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="No aceptado" data-success="Aceptado">Escribe el email</span>
+                      </div>
+                      
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Textarea</label>
+                    </div>
+                    <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar <i class="fad fa-paper-plane"></i></button>
+                  </form>
+                </div>
           </div>
-        </div>
-         
-        <div class="SkillBar">
-          <div id="Skill-CSS">
-            <span class="Skill-Area ">CSS/CSS3</span>
-            <img class="skill_logo" src="img/css.png" alt="">
-            <span class="PercentText ">70%</span>
+    </div>
+
+    <div class="grid7" id="details">
+      <div class="detail_title">
+        <p class="title">Detalles personales</p></div>
+      <div class="profile_image"><img class="foto2" src="img/profile.png" alt="Eddie Jesus Huaripayta Gonzales"></div>
+      <div class="date_profile"><div class=""><p><strong>Nombres:</strong> Eddie Jesus</p>
+        <p><strong>Apellidos:</strong> Huaripayta Gonzales</p>
+        <p><strong>Dirección:</strong> Lima Perú</p>
+        <p><strong>Telefono:</strong> +51 970 383 996</p>
+        <p><strong>Email:</strong> eddiejesus1197@gmail.com</p></div></div>
+
+      <button class="cv">Descargar mi CV</button>
+
+
+    </div>
+
+    <div class="grid8" id="skills">
+    
+    <div class="skill_title"><p class="title">Habilidades Técnicas</p></div>
+        <div class="skill_professional">
+          <div class="SkillBar">
+            <div id="Skill-HTML">
+              <span class="Skill-Area ">HTML</span>
+              <img class="skill_logo" src="img/html5.png" alt="">
+              <span class="PercentText ">100%</span>
+            </div>
           </div>
-        </div>
-       
-        <div class="SkillBar">
-          <div id="Skill-jQuery">
-            <span class="Skill-Area ">Django </span>
-            <img class="skill_logo" src="img/python.png" alt="Python - Django">
-            <span class="PercentText ">40%</span>
-          </div>
-        </div>
-         
-        <div class="SkillBar">
-          <div id="Skill-JS">
-            <span class="Skill-Area ">Javascript</span>
-            <img class="skill_logo" src="img/javascript.png" alt="Javascript">
-            <span class="PercentText ">70%</span>
-          </div>
-        </div>
           
           <div class="SkillBar">
-          <div id="Skill-JAVA">
-            <span class="Skill-Area ">JAVA </span>
-            <img class="skill_logo" src="img/java.svg" alt="Java">
-            <span class="PercentText ">70%</span>
+            <div id="Skill-CSS">
+              <span class="Skill-Area ">CSS/CSS3</span>
+              <img class="skill_logo" src="img/css.png" alt="">
+              <span class="PercentText ">70%</span>
+            </div>
           </div>
-        </div>
-         
-          <div class="SkillBar">
-          <div id="Skill-PHP">
-            <span class="Skill-Area ">PHP </span>
-            <img class="skill_logo" src="img/php.svg" alt="PHP">
-            <span class="PercentText ">50%</span>
-          </div>
-        </div>
-      </div>      
-      
         
-    
-</div>
+          <div class="SkillBar">
+            <div id="Skill-jQuery">
+              <span class="Skill-Area ">Django </span>
+              <img class="skill_logo" src="img/python.png" alt="Python - Django">
+              <span class="PercentText ">40%</span>
+            </div>
+          </div>
+          
+          <div class="SkillBar">
+            <div id="Skill-JS">
+              <span class="Skill-Area ">Javascript</span>
+              <img class="skill_logo" src="img/javascript.png" alt="Javascript">
+              <span class="PercentText ">70%</span>
+            </div>
+          </div>
+            
+            <div class="SkillBar">
+            <div id="Skill-JAVA">
+              <span class="Skill-Area ">JAVA </span>
+              <img class="skill_logo" src="img/java.svg" alt="Java">
+              <span class="PercentText ">70%</span>
+            </div>
+          </div>
+          
+            <div class="SkillBar">
+            <div id="Skill-PHP">
+              <span class="Skill-Area ">PHP </span>
+              <img class="skill_logo" src="img/php.svg" alt="PHP">
+              <span class="PercentText ">50%</span>
+            </div>
+          </div>
+        </div>      
+        
+          
+      
+  </div>
 
 <div class="grid9" id="languajes">
   <div class="speak_title"><p class="title">Idiomas</p></div>
@@ -288,22 +301,18 @@
 </div>
 <!-- Solamente falta crear los idiomas y la experiencia de codigo -->
 <footer>
-  <!-- <p>Footer</p> -->
-  <a href="#"><i class="fab fa-facebook-f"></i></a>
-  <a href="#"><i class="fab fa-linkedin"></i></a>
-  <a href="#"><i class="fab fa-github"></i></a>
-  <br> <p>--> Eddie Jesus Huaripayta Gonzales 2020  </p>
+  <div class=""><a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a></div>
+  <p class="subtitulo">--> Eddie Jesus Huaripayta Gonzales 2020  </p>
+
+
 </footer>
-
   </div>
-
-  
-
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
   <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
   <!-- <script src="js/skills.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 </html>
