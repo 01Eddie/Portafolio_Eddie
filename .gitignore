@@ -4,3 +4,10 @@ package-lock.json
 package.json
 /.vscode/
 /assets/
+/sass/
+credentials.json
+index.js
+index2.html
+package-lock.json
+style2.css
+/js/mapConfig.js

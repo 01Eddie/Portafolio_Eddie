@@ -1,22 +1,34 @@
 function myFunction() {
-  var element = document.getElementById('index');
-  element.classList.toggle("darkmode1");
-  var element = document.getElementById('about');
-  element.classList.toggle("darkmode2");
-  var element = document.getElementById('work_photos');
-  element.classList.toggle("darkmode3");
-  var element = document.getElementById('resume');
-  element.classList.toggle("darkmode4");
-  var element = document.getElementById('localization');
-  element.classList.toggle("darkmode5");
-  var element = document.getElementById('contact');
-  element.classList.toggle("darkmode6");
-  var element = document.getElementById('details');
-  element.classList.toggle("darkmode7");
-  var element = document.getElementById('skills');
-  element.classList.toggle("darkmode8");
-  var element = document.getElementById('languajes');
-  element.classList.toggle("darkmode9");
-  var element = document.getElementById('testimonials');
-  element.classList.toggle("darkmode10");
+    let element = document.querySelector('.grid1');
+    element.classList.toggle("darkmode1");
+    element = document.querySelector('.grid2');
+    element.classList.toggle("darkmode2");
+    element = document.querySelector('.grid3');
+    element.classList.toggle("darkmode3");
+    element = document.querySelector('.grid4');
+    element.classList.toggle("darkmode4");
+    element = document.querySelector('.grid5');
+    element.classList.toggle("darkmode5");
+    element = document.querySelector('.grid6');
+    element.classList.toggle("darkmode6");
+    element = document.querySelector('.grid7');
+    element.classList.toggle("darkmode7");
+    element = document.querySelector('.grid8');
+    element.classList.toggle("darkmode8");
+    element = document.querySelector('.grid9');
+    element.classList.toggle("darkmode9");
+    element = document.querySelector('.grid10');
+    element.classList.toggle("darkmode10");
 }
+/* 
+ScrollReveal().reveal('.grid1');
+ScrollReveal().reveal('.grid2', {delay: 500});
+ScrollReveal().reveal('.grid3', {delay: 500});
+ScrollReveal().reveal('.grid4', {delay: 500});
+ScrollReveal().reveal('.grid5', {delay: 500});
+ScrollReveal().reveal('.grid6', {delay: 500});
+ScrollReveal().reveal('.grid7', {delay: 500});
+ScrollReveal().reveal('.grid8', {delay: 500});
+ScrollReveal().reveal('.grid9');
+ScrollReveal().reveal('.grid10', {delay: 500});
+ */
