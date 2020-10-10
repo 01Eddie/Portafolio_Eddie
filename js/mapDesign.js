@@ -95,7 +95,7 @@ function initMap() {
 let marker = new google.maps.Marker({
     position: casa, 
     map: map, 
-    icon: "/img/logo.png",
+    icon: "/img/mapEddie01.png",
 });
 
 
