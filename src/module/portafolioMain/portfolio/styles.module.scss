@@ -1,0 +1,22 @@
+.portfolioContainer {
+  padding: 120px 0px 120px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxHeader{
+  margin-bottom: 80px;
+}
+
+.boxItem {
+  flex: 0.5;
+}
+
+.cardHeader{
+  padding: 35px 30px;
+}
+
+.tooltipCardHeader {
+  font-style: normal;
+  font-weight: 700;
+}
