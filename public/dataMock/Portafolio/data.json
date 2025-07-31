@@ -1,0 +1,120 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "key": "home",
+            "title": "Hola, Soy Eddie HG! Un web developer",
+            "description": "Soy un desarrollador web con experiencia en la creación de aplicaciones web modernas y eficientes. Me apasiona el desarrollo front-end y back-end, y disfruto trabajando con tecnologías como React, Node.js y bases de datos SQL.",
+            "image": "/dataMock/Portafolio/imgs/eddieHG.jpg",
+            "url": "https://eddiehg.com",
+            "detail": [
+                {
+                    "number": "3",
+                    "sign": "+",
+                    "description": "años de experiencia"
+                },
+                {
+                    "number": "15",
+                    "sign": "+",
+                    "description": "proyectos avanzados"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "key": "about",
+            "section": "Acerca de mi",
+            "title": "Desarrollador web enfocado en crear experiencias digitales únicas",
+            "description": "Soy desarrollador web freelance con pasión por el diseño funcional y orientado al usuario. Disfruto convertir ideas en interfaces limpias, accesibles y modernas, adaptadas a las necesidades de cada cliente. Me destaco por una comunicación clara, compromiso con los plazos y una actitud proactiva. Siempre busco perfeccionar mis habilidades y colaborar en proyectos innovadores que aporten valor real a quienes los utilizan.",
+            "image": "/dataMock/Portafolio/imgs/aboutMe.jpg",
+            "url": "https://eddiehg.com/portafolio"
+        },
+        {
+            "id": 2,
+            "key": "myStory",
+            "section": "Mi Historia",
+            "title": "Evolución constante en el desarrollo web",
+            "description": "Inicié mi carrera impulsado por el interés en cómo se construyen las interfaces modernas. Con el tiempo, he perfeccionado mis habilidades en tecnologías como HTML, CSS, JavaScript y frameworks como React, enfocándome en la creación de soluciones escalables, accesibles y centradas en el usuario. Como freelance, colaboro con equipos y clientes para convertir requerimientos técnicos y de negocio en productos web funcionales, manteniendo buenas prácticas, rendimiento optimizado y una arquitectura clara en cada proyecto.",
+            "image": "/dataMock/Portafolio/imgs/myStory.jpg",
+            "url": "https://eddiehg.com/skills"
+        },
+        {
+            "id": 3,
+            "key": "skills",
+            "section": "Habilidades",
+            "title": "Domino lenguajes de programacion en los que soy competente en el mercado",
+            "skills": [
+                {
+                    "name": "HTML & CSS",
+                    "icon": "/dataMock/Portafolio/imgs/htmlCss.jpg",
+                    "description": "Conocimientos en HTML5 y CSS3, creando estructuras semánticas y estilos responsivos."
+                },
+                {
+                    "name": "Node js",
+                    "icon": "/dataMock/Portafolio/imgs/nodeJs.png",
+                    "description": "Experiencia en desarrollo de aplicaciones del lado del servidor con Node.js, utilizando Express y bases de datos SQL."
+                },
+                {
+                    "name": "React js",
+                    "icon": "/dataMock/Portafolio/imgs/reactJs.png",
+                    "description": "Desarrollo de interfaces de usuario interactivas y eficientes con React, aprovechando su ecosistema y herramientas como Redux."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "key": "portfolio",
+            "section": "Portafolio",
+            "title": "Echa un vistazo a algunos de mis últimos proyectos.",
+            "projects": [
+                {
+                    "name": "Rimac Seguros",
+                    "description": "Sitio web corporativo de Rimac Seguros con información sobre productos y servicios.",
+                    "image": "/dataMock/Portafolio/imgs/rimacSeguros.png",
+                    "url": "https://eddiehg.com/ecommerce"
+                },
+                {
+                    "name": "HealthFirst",
+                    "description": "Aplicación web de gestión de citas médicas y pacientes para clínicas y hospitales.",
+                    "image": "/dataMock/Portafolio/imgs/healthfirst.png",
+                    "url": "https://eddiehg.com/blog"
+                },
+                {
+                    "name": "Estudio REM",
+                    "description": "Sitio web corporativo del estudio de abogados REM, mostrando proyectos y servicios.",
+                    "image": "/dataMock/Portafolio/imgs/estudioREM.svg",
+                    "url": "https://eddiehg.com/portfolio"
+                },
+                {
+                    "name": "Eddie UI",
+                    "description": "Librería de componentes de interfaz de usuario para aplicaciones web.",
+                    "image": "/dataMock/Portafolio/imgs/eddieUI.png",
+                    "url": "https://eddiehg.com/eddie-ui"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "key": "services",
+            "section": "Servicios",
+            "title": "Conocimientos con lenguajes de programacion en los proyectos",
+            "services": [
+                {
+                    "name": "Front-end",
+                    "description": "Desarrollo de interfaces de usuario interactivas y responsivas utilizando HTML, CSS y JavaScript.",
+                    "icon": "/dataMock/Portafolio/imgs/frontend.png"
+                },
+                {
+                    "name": "Back-end",
+                    "description": "Desarrollo de aplicaciones del lado del servidor con Node.js, Nest Ts y bases de datos SQL.",
+                    "icon": "/dataMock/Portafolio/imgs/backend.png"
+                },
+                {
+                    "name": "DevOps",
+                    "description": "Implementación de prácticas de DevOps para mejorar la integración y entrega continua, utilizando herramientas como Docker y CI/CD.",
+                    "icon": "/dataMock/Portafolio/imgs/devops.png"
+                }
+            ]
+        }
+    ]
+}

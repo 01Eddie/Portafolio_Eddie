@@ -1,0 +1,38 @@
+.servicesContainer {
+  padding: 0px 0px 120px 0px;
+}
+.servicesTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.servicesContainerTitle {
+  margin: 0px 0px 80px;
+}
+
+.servicesTitle {
+  font-weight: bold;
+}
+
+.skillsCard {
+  padding: 80px 30px;
+  flex: 0 0 calc(33.333% - 10.66px);
+  
+}
+@media (max-width: 768px) {
+    .skillsCard {
+      flex: 0 0 calc(50% - 8px);  /* 2 por fila en tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skillsCard {
+      flex: 0 0 100%;  /* 1 por fila en móviles */
+    }
+  }
+
+.cardImgContainer {
+  height: 86px;
+  width: fit-content;
+}

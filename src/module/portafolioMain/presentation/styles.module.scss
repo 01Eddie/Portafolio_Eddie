@@ -1,0 +1,25 @@
+.presentationContainer {
+    padding: 80px 0px 210px 0px;
+    justify-content: space-between;
+}
+
+.imgPresentation {
+    height: 520px;
+    width: 520px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.boxPresentation {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+}
+
+.textParagraph {
+    font-weight: bold;
+}
+
+.detailsMe {
+    margin: 24px 0px;
+}

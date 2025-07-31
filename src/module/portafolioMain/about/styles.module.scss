@@ -1,0 +1,53 @@
+.aboutContainer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.storyContainer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutMeContainer {
+  padding: 180px 0px 0px;
+  flex: 0.5;
+}
+
+.myStoryContainer {
+  margin: 80px 0px 0px;
+  flex: 0.5;
+}
+
+.imgAboutMe {
+    flex: 0.5;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 560px;
+    height: 724px;
+}
+
+.imgMyStory {
+  flex: 0.5;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 560px;
+  height: 724px;
+}
+
+.aboutMeSection {
+  font-weight: bold;
+}
+
+.aboutMeText {
+  font-weight: bold;
+  margin: 24px 0px;
+}
+
+.myStorySection {
+  font-weight: bold;
+}
+
+.myStoryText {
+  font-weight: bold;
+  margin: 24px 0px;
+}
