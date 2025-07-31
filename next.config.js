@@ -1,9 +1,2 @@
-const nextConfig = {
-  /* config options here */
-  reactStrictMode: true,
-  experimental: {
-    optimizePackageImports: ["@chakra-ui/react"],
-  },
-};
-
-export default nextConfig;
+const config = require('./.next-config-built.js'); 
+module.exports = config.default || config;
