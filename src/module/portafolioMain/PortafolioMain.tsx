@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import useSWR from "swr";
 import MenuHeader from "../menuHeader";
 import About from "./about";
@@ -14,7 +14,7 @@ import { PortafolioMainResponse } from "@/domain/models/portafolioMain/portafoli
 export const DataContext = createContext<PortafolioMainResponse | null>(null);
 
 const PortafolioMain = () => {
-  const {data, isLoading, error} = useSWR(ROUTEJSON, fetcherJson);
+  const {data} = useSWR(ROUTEJSON, fetcherJson);
 
   return (
     <div className="containerHeader">

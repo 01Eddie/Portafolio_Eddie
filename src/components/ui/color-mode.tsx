@@ -7,8 +7,10 @@ import type { ThemeProviderProps } from "next-themes"
 import * as React from "react"
 import { LuMoon, LuSun } from "react-icons/lu"
 
+// eslint-disable-next-line
 export interface ColorModeProviderProps extends ThemeProviderProps {}
 
+// eslint-disable-next-line
 export function ColorModeProvider(props: ColorModeProviderProps) {
   return (
     <ThemeProvider attribute="class" disableTransitionOnChange {...props} />
@@ -46,8 +48,10 @@ export function ColorModeIcon() {
   return colorMode === "dark" ? <LuMoon /> : <LuSun />
 }
 
+// eslint-disable-next-line
 interface ColorModeButtonProps extends Omit<IconButtonProps, "aria-label"> {}
 
+// eslint-disable-next-line
 export const ColorModeButton = React.forwardRef<
   HTMLButtonElement,
   ColorModeButtonProps

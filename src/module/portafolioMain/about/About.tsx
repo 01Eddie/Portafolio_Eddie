@@ -16,6 +16,7 @@ const About = () => {
             <Image
                 className={styles.imgAboutMe}
                 src={getAboutMe?.image}
+                alt="About Me Image"
             />
             <Box className={styles.aboutMeContainer}>
                 <Text fontSize={20} className={styles.aboutMeSection}>{getAboutMe?.section}</Text>
@@ -32,6 +33,7 @@ const About = () => {
             <Image
                 className={styles.imgMyStory}
                 src={getMyStory?.image}
+                alt="My Story Image"
             />
         </Flex>
         </>

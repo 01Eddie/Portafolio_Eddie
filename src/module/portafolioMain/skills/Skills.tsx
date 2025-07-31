@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Avatar, Box, Card, For, Heading, Stack, Text } from "@chakra-ui/react";
+import { Avatar, Box, Card, Heading, Stack, Text } from "@chakra-ui/react";
 import { PortafolioMainResponse } from "@/domain/models/portafolioMain/portafolioMain";
 import { DataContext } from "../PortafolioMain";
 import styles from "./styles.module.scss";
@@ -24,7 +24,6 @@ const Skills = () => {
                   <Avatar.Image
                     style={{
                       objectFit: 'contain',
-                      // width: '86px',
                       height: '86px'
                     }} 
                     src={skill.icon}  />
