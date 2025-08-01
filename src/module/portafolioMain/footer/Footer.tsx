@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Box, Button, Flex, Heading, HStack, IconButton, Text } from "@chakra-ui/react";
 import { FaLinkedin, FaTiktok } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
+import { FormContext } from "@/module/menuHeader/MenuHeader";
+import ContactMe from "../contactMe";
 import styles from "./styles.module.scss";
 
 const Footer = () => {
+  const [openForm, setOpenForm] = useState(false);
+
   const handleClickScrollToSection = (sectionId: string) => () => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -15,7 +20,12 @@ const Footer = () => {
     window.open(url, '_blank');
   }
 
+  const handleClickContactMe = () => {
+    setOpenForm(true);
+  }
+
   return (
+    <>
     <Flex className={styles.footerContainer}>
       <Box className={styles.box__logo}>
         <Heading as='h2'>Eddie HG</Heading>
@@ -44,12 +54,21 @@ const Footer = () => {
       <HStack wrap="wrap" gap="6" className={styles.footer__options}>
         <Button color={{ _hover: "blue.700" }} variant="plain" onClick={handleClickScrollToSection('aboutMe')}>Acerca de</Button>
         <Button color={{ _hover: "blue.700" }} variant="plain" onClick={handleClickScrollToSection('portfolio')}>Proyectos</Button>
-        <Button color={{ _hover: "blue.700" }} variant="plain">Contactame</Button>
+        <Button color={{ _hover: "blue.700" }} variant="plain" onClick={handleClickContactMe}>Contactame</Button>
         {/* <IconButton color={{ _hover: "blue.700" }} variant="outline">
           <LuChevronDown />
-        </IconButton> */}
+          </IconButton> */}
       </HStack>
     </Flex>
+    <FormContext
+        value={{
+          openForm,
+          setOpenForm
+        }}
+      >
+        <ContactMe />
+      </FormContext>
+    </>
   );
 }
 
