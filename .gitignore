@@ -45,3 +45,5 @@ next-env.d.ts
 /portafolio_eddie
 
 /ProyectoAnterior
+
+.next-config-built.js
