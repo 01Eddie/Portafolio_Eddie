@@ -3,6 +3,7 @@ import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 import MenuHeader from "./MenuHeader";
 
 // Mockeamos ContactMe para simplificar el test
+// eslint-disable-next-line
 jest.mock("../portafolioMain/contactMe/ContactMe", () => () => <div>ContactMe Component</div>);
 
 describe("MenuHeader component", () => {

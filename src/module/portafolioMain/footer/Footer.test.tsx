@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 
 // Mockeamos ContactMe para simplificar el test
+// eslint-disable-next-line
 jest.mock("../contactMe/ContactMe", () => () => <div>ContactMe Component</div>);
 
 describe("Footer component", () => {
