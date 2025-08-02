@@ -7,7 +7,7 @@ import { config } from "@/common/globals";
 const ContactMe = () => {
   const {openForm, setOpenForm} = useContext(FormContext);
 
-  const handleOpenChange = (e: { open: boolean}) => {
+  const handleOpenChange = (e: { open: boolean }) => {
     setOpenForm(e.open)
   }
 
@@ -34,7 +34,7 @@ const ContactMe = () => {
                       <Input type="text" name="name" />
                     </Field.Root>
                     <Field.Root>
-                      <Field.Label>Email address</Field.Label>
+                      <Field.Label>Email</Field.Label>
                       <Input name="email" type="email" />
                     </Field.Root>
                     <Field.Root>
@@ -53,13 +53,13 @@ const ContactMe = () => {
                 </form>
               </Dialog.Body>
               <Dialog.CloseTrigger asChild>
-                <CloseButton size="md" />
+                <CloseButton size="md" aria-label="close" />
               </Dialog.CloseTrigger>
             </Dialog.Content>
           </Dialog.Positioner>
         </Portal>
     </Dialog.Root>
   );
-  }
+}
 
 export default ContactMe;

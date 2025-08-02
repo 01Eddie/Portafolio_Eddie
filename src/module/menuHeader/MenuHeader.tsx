@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 
 export const FormContext = createContext({
   openForm: false,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   setOpenForm: (open: boolean) => {}
 });
 
