@@ -12,7 +12,6 @@ export default function Home() {
         <meta name="description" content="Bienvenidos a mi Portafolio: Eddie Jesus Huaripayta Gonzales" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/dataMock/Portafolio/imgs/iconDev.svg" />
-        
       </Head>
       <div
         // className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
