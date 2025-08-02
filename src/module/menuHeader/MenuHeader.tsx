@@ -3,7 +3,10 @@ import { Button, Heading, HStack, Separator } from "@chakra-ui/react";
 import ContactMe from "../portafolioMain/contactMe";
 import styles from "./styles.module.scss";
 
-export const FormContext = createContext({
+export const FormContext = createContext<{
+  openForm: boolean;
+  setOpenForm: (open: boolean) => void;
+}>({
   openForm: false,
   setOpenForm: (open: boolean) => {}
 });

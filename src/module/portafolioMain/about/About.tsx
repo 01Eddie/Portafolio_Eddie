@@ -16,7 +16,7 @@ const About = () => {
             <Image
                 className={styles.imgAboutMe}
                 src={getAboutMe?.image}
-                alt="About Me Image"
+                alt="Eddie Jesus Huaripayta Gonzales"
             />
             <Box className={styles.aboutMeContainer}>
                 <Text fontSize={20} className={styles.aboutMeSection}>{getAboutMe?.section}</Text>
